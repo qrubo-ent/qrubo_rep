@@ -1,17 +1,17 @@
 body {
-  background-color: #131f30;
-  color: #f2efcf;
+  background-color: #0c121a;
+  color: #f7f4d8;
   font-family: Arial, sans-serif;
   text-align: center;
   padding: 2rem;
 }
 
 h1 {
-  color: #de204c;
+  color: #e81b4b;
 }
 
 button {
-  background-color: #f7e624;
+  background-color: #fadc32;
   color: #121212;
   padding: 0.5rem 1rem;
   border: none;
