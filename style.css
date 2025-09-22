@@ -13,7 +13,7 @@ body {
 /* TV overlay container */
 .tv-screen {
   height: 100%;          /* Narrower than full screen */
-  max-width: 1000px;   /* Optional max width */
+  /*max-width: 1000px;   /* Optional max width */
   aspect-ratio: 3 / 2; /* Classic TV ratio */
   background-color: #111;
   border-radius: 30px;  /* Beveled corners */
