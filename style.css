@@ -12,12 +12,9 @@ body {
 
 /* TV overlay container */
 .tv-screen {
-  width: 80%;             /* still narrow */
-  max-width: 1000px;
-  max-height: 90vh;       /* allow it to fit on screen but still scroll if content is taller */
+  height: 100%;             /* still narrow */
   background-color: #111;
-  border-radius: 30px;
-  box-shadow: 0 0 60px rgba(0,0,0,0.8), inset 0 0 40px rgba(255,255,255,0.05);
+  border-radius: 60px;
   overflow: hidden;       /* keep frame clipping */
   position: relative;
   display: flex;
