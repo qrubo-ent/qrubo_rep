@@ -12,11 +12,10 @@ body {
 
 /* TV overlay container */
 .tv-screen {
-  /*height: 100%;          /* Narrower than full screen */
+  height: 100%;          /* Narrower than full screen */
   aspect-ratio: 3 / 2; /* Classic TV ratio */
-  background-color: #111;
-  border-radius: 30px;  /* Beveled corners */
-  box-shadow: 0 0 60px rgba(0,0,0,0.8), inset 0 0 40px rgba(255,255,255,0.05);
+  background-color: #0c121a;
+  border-radius: 60px;  /* Beveled corners */
   overflow: hidden;
   position: relative;
   display: flex;
@@ -29,7 +28,7 @@ body {
   width: 95%;
   height: 95%;
   text-align: center;
-  color: #EAEAEA;
+  color: #f7f4d8;
 }
 
 /* Optional: scanlines effect */
