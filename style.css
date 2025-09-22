@@ -29,8 +29,20 @@ body {
   height: 100%;
   text-align: center;
   color: #f7f4d8;
-  overflow-y: auto;         /* vertical scroll only */
 }
+.tv-content::-webkit-scrollbar {
+  width: 6px;
+}
+
+.tv-content::-webkit-scrollbar-thumb {
+  background-color: rgba(255,255,255,0.2);
+  border-radius: 3px;
+}
+
+.tv-content::-webkit-scrollbar-track {
+  background: transparent;
+}
+
 
 /* Optional: scanlines effect */
 .tv-screen::before {
