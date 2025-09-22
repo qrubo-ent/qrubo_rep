@@ -29,6 +29,7 @@ body {
   height: 95%;
   text-align: center;
   color: #f7f4d8;
+  overflow-y: auto;         /* vertical scroll only */
 }
 
 /* Optional: scanlines effect */
