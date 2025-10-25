@@ -1,0 +1,12 @@
+Negro: #10161f
+Blanco: #efeed5
+Rojo: #e02844
+Amarillo: #e9c33d
+
+
+ALT
+
+Negro: 21221b
+Verde: dce8ba
+Amarillo: f3d179
+Salmón: f09872

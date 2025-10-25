@@ -59,7 +59,7 @@ function crearCatalogo(titulo, filtroKey, filtroValor) {
     item.classList.add('item');
 
     item.innerHTML = `
-      <a href="../emulator/emulator.html?core=${encodeURIComponent(juego.core)}&id=${encodeURIComponent(juego.id)}">
+      <a href="emulator/emulator.html?core=${encodeURIComponent(juego.core)}&id=${encodeURIComponent(juego.id)}">
         <img src="${imgJuego}" alt="${juego.name}" class="item-img" />
         <div class="item-caption">
           <h3>${juego.name}</h3>
@@ -107,7 +107,7 @@ function mostrarResultados(lista) {
   lista.forEach(juego => {
     const li = document.createElement('li');
     li.innerHTML = `
-      <a href="../emulator/emulator.html?core=${encodeURIComponent(juego.core)}&id=${encodeURIComponent(juego.id)}">
+      <a href="emulator/emulator.html?core=${encodeURIComponent(juego.core)}&id=${encodeURIComponent(juego.id)}">
         <div class="nombre">${juego.name}</div>
       </a>
     `;
