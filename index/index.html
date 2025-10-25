@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Qrubo Games</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+	<div class="tv">
+		<div class="stickybar">
+			<img src="menu_icon.png" alt="Menu" class="menu-icon"/>
+			<h1 class="qrubogames">Qrubo Games</h1>
+		</div>
+		<div class="content">
+			<div class="searchbar">
+				<input type="text" id="busqueda" placeholder="Buscar juegos..." />
+				<ul id="resultados"></ul>
+			</div>
+			
+			<div id="catalogos-container">
+			</div>
+		</div>
+	</div>
+
+<!-- Your custom search logic -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.6.2/fuse.min.js"></script>
+<script src="search.js"></script>
+
+</body>
+</html>

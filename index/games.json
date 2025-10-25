@@ -1,0 +1,132 @@
+[
+  {
+    "id": "001",
+    "name": "Rayman 2: The Great Escape",
+    "alias": ["R2", "Rayman DS"],
+    "core": "nds",
+    "release": 2005,
+    "developer": "Ubisoft",
+    "genre": "platformer",
+    "hltb": 9
+  },
+  {
+    "id": "002",
+    "name": "Super Mario 64",
+    "alias": ["SM64", "M64", "Mario 64"],
+    "core": "n64",
+    "release": 1996,
+    "developer": "Nintendo",
+    "genre": "platformer",
+    "hltb": 17
+  },
+  {
+    "id": "003",
+    "name": "Final Fantasy VII",
+    "alias": ["FF7", "Final Fantasy 7"],
+    "core": "psx",
+    "release": 1997,
+    "developer": "Square",
+    "genre": "rpg",
+    "hltb": 50
+  },
+  {
+    "id": "004",
+    "name": "Animal Crossing: Wild World",
+    "alias": ["ACWW", "Animal Crossing DS"],
+    "core": "nds",
+    "release": 2005,
+    "developer": "Nintendo",
+    "genre": "sim",
+    "hltb": 132
+  },
+  {
+    "id": "005",
+    "name": "Super Mario Bros. 3",
+    "alias": ["Mario 3", "SMB3"],
+    "core": "nes",
+    "release": 1988,
+    "developer": "Nintendo",
+    "genre": "platformer",
+    "hltb": 6
+  },
+  {
+    "id": "006",
+    "name": "The Legend of Zelda: Ocarina of Time",
+    "alias": ["TLOZ OOT", "OOT"],
+    "core": "n64",
+    "release": 1998,
+    "developer": "Nintendo",
+    "genre": "adventure",
+    "hltb": 30
+  },
+  {
+    "id": "007",
+    "name": "Pokémon Red Version",
+    "alias": ["Pokemon Red"],
+    "core": "gb",
+    "release": 1998,
+    "developer": "Nintendo",
+    "genre": "rpg",
+    "hltb": 43
+  },
+  {
+    "id": "008",
+    "name": "Super Mario Bros.",
+    "alias": ["SMB", "Mario Bros", "Mario"],
+    "core": "nes",
+    "release": 1985,
+    "developer": "Nintendo",
+    "genre": "platformer",
+    "hltb": 2
+  },
+  {
+    "id": "009",
+    "name": "Donkey Kong Country",
+    "alias": ["DKC"],
+    "core": "snes",
+    "release": 1994,
+    "developer": "Nintendo",
+    "genre": "platformer",
+    "hltb": 5
+  },
+  {
+    "id": "010",
+    "name": "Super Metroid",
+    "alias": ["Metroid 3"],
+    "core": "snes",
+    "release": 1994,
+    "developer": "Nintendo",
+    "genre": "adventure",
+    "hltb": 8
+  },
+  {
+    "id": "011",
+    "name": "Metal Gear Solid",
+    "alias": ["MGS1"],
+    "core": "psx",
+    "release": 1998,
+    "developer": "Konami",
+    "genre": "adventure",
+    "hltb": 13
+  },
+  {
+    "id": "012",
+    "name": "Tetris",
+    "alias": ["Tetris GB", "GB Tetris", "Gameboy Tetris", "Tetris Gameboy"],
+    "core": "gb",
+    "release": 1989,
+    "developer": "Nintendo",
+    "genre": "puzzle",
+    "hltb": 0
+  },
+  {
+    "id": "013",
+    "name": "Sonic the Hedgehog",
+    "alias": ["Sonic 1"],
+    "core": "genesis",
+    "release": 1991,
+    "developer": "Sega",
+    "genre": "platformer",
+    "hltb": 2
+  }
+]

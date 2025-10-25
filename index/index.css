@@ -1,0 +1,170 @@
+body {
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*---------------------------------------------------------*/
+.spacing {
+  height: 1000px;
+}
+
+
+.tv {
+  height: 100vh;
+  width: 100vw;
+  max-width: 133vh;
+  background-color: #10161f; /* Same as your content background */
+  border-radius: min(15vh, 15vw);
+  overflow: auto;
+  position: relative;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+/*---------------------------------------------------------*/
+
+.stickybar {
+  z-index: 10;
+  position: sticky;
+  top: 0;
+  left :0;
+  width: 100%;
+  height: 18vh;
+  min-height: 18vh;
+  max-height: 18vh;
+  background-color: #e02844;
+  border-bottom: 0.6vh solid 	#701422;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  gap: 0vh;                 /* space between items */
+  font-family: "Fredoka One";
+  font-size: 3vh;
+  color: #10161f;
+ }
+
+.menu-icon {
+  width: 10vh;
+  height: 10vh;
+  transform: translateX(45%)
+}
+
+.qrubogames {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+.content {
+  margin-top: 2vh;
+}
+
+.catalog {
+  display: flex;
+  justify-content: center;   /* center items horizontally */
+  gap: 2vh;                 /* space between items */
+}
+
+.catalog-title {
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  font-size: 4vh;
+  font-family: "Fredoka One";
+  
+}
+
+.item{
+  border-radius: 5%;
+  width: 25vh;
+  height: 30vh;
+  background-color: #e9c33d;
+  padding: 1.5%;
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: 2.5vh;
+}
+
+.item-img {
+  width: 100%;
+  border-radius: 10%;
+}
+
+.item-caption {
+  padding: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -2vh;
+  margin-bottom: -3vh;
+}
+
+.item-icon {
+  width: 5vh;
+  height: 5vh;
+  right: 0px;
+}
+
+.item-desc {
+  margin-bottom: 0vh;
+}
+
+/* Quitar estilos por defecto de los enlaces */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* También asegurarse que los estados no cambien colores */
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+/*----------------------------------------------------------*/
+.searchbar {
+  height: 10vh;
+  display: flex;
+  flex-direction: column;  /* apila los elementos en columna */
+  align-items: center;   
+  
+}
+
+/* Center the input */
+#busqueda {
+
+  width: 50%;
+  font-size: 16px;
+  border: 2px solid #333;
+  border-radius: 8px;
+}
+
+
+/* Center the results and limit width */
+#resultados {
+  z-index: 100;
+  list-style: none;
+  padding: 0;
+  width: 80%;
+  max-width: 400px;
+  text-align: left;          /* keep text inside each li left-aligned */
+}
+
+/* Style each result */
+#resultados li {
+  background: #efeed5;
+  border: 1px solid red;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+
+#resultados li:hover {
+  background: #f0f0f0;
+}
+/*-------------------------------------------------*/

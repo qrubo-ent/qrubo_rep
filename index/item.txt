@@ -1,0 +1,8 @@
+				<div class="item">
+					<img src="rayman2.png" alt="Rayman 2" class="item-img"/>
+					<div class="item-caption">
+						<h3>Rayman 2</h3>
+						<img src="ps1_icon.png" alt="PS1" class="item-icon"/>
+					</div>
+					<p class="item-desc">Descripción breve</p>
+				</div>
