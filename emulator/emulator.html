@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Qrubo Games Arcade</title>
+  <style>
+    body {
+      background: #000;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: #fff;
+      font-family: sans-serif;
+    }
+    #game-container {
+      width: 800px;
+      max-width: 100%;
+      height: 600px;
+      margin-top: 20px;
+      background: #222;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+  </style>
+</head>
+<body>
+  <h2>Emulador</h2>
+
+  <div id="game-container">
+    <div id="game"></div>
+  </div>
+
+  <script>
+    // Obtener parámetros de la URL
+    function getQueryParams() {
+      const params = {};
+      location.search.substring(1).split('&').forEach(pair => {
+        const [key, value] = pair.split('=');
+        if (key) params[decodeURIComponent(key)] = decodeURIComponent(value);
+      });
+      return params;
+    }
+
+    const params = getQueryParams();
+    const core = params.core || 'psx';
+    const id = params.id || '001';
+
+    // Mapeo de extensiones posibles por core
+    const extMap = {
+      nes: ['.nes'],
+      snes: ['.sfc'],
+      psx: ['.bin'],
+      nds: ['.nds'],
+      n64: ['.z64', '.n64', '.v64'],
+      gb:  ['.gb'],
+      genesis: ['.md']
+    };
+
+    const possibleExts = extMap[core] || ['.bin'];
+
+    // Buscar la ROM que exista realmente
+    async function findRomUrl() {
+      for (const ext of possibleExts) {
+        const path = `../roms/r${id}${ext}`;
+        try {
+          const res = await fetch(path, { method: 'HEAD' });
+          if (res.ok) return path;
+        } catch (e) {
+          // Ignorar error y seguir buscando
+        }
+      }
+      return null;
+    }
+
+    findRomUrl().then(romUrl => {
+      if (!romUrl) {
+        document.body.innerHTML = "<h2>No se encontró la ROM.</h2>";
+        return;
+      }
+
+      // Configurar EmulatorJS
+      EJS_player = "#game";
+      EJS_core = core;
+      EJS_gameUrl = romUrl;
+      EJS_pathtodata = "emulatorjs/";
+
+      // Cargar el emulador
+      const script = document.createElement('script');
+      script.src = "emulatorjs/loader.js";
+      document.body.appendChild(script);
+    });
+  </script>
+</body>
+</html>
